@@ -1,7 +1,7 @@
 {
   "name": "hazz"
-  , "version": "0.0.3"
-  , "description": "Hazz."
+  , "version": "0.1.0"
+  , "description": "Hazz, a pseudo-random data filled table to generate 2 random, indipendent, very fast hash functions."
   , "homepage": "https://github.com/rootslab/hazz"
   , "private": false
   , "repository": {
@@ -10,6 +10,9 @@
   }
   , "keywords": [
     "hazz"
+    , "random"
+    , "hash"
+    , "hashing"
   ]
   , "author": {
     "name": "Guglielmo Ferri"
@@ -22,7 +25,7 @@
   }
   , "main": "index"
   , "engines": {
-    "node": ">=0.10.x"
+    "node": ">=0.4.x"
   }
   , "scripts": {
     "test": "node test/run.js"

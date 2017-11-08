@@ -47,9 +47,9 @@ var Hazz  = require( 'hazz' );
 ### Constructor
 
 ```javascript
-Hazz()
+Hazz( Number max_input_length )
 // or
-new Hazz()
+new Hazz( Number max_input_length )
 ```
 
 ###  Properties
@@ -57,9 +57,14 @@ new Hazz()
 
 ```javascript
 /*
- * 
+ * the pseudo-random data for generating hash numbers 
  */
+Hazz.table
 
+/*
+ * max input key length  
+ */
+Hazz.ilength
 ```
 
 ### Methods
@@ -68,8 +73,16 @@ new Hazz()
 
 ```javascript
 /*
- *
+ * fill table with fresh pseudo-random numbers (32 bits)
  */
+Hazz#fill() : Hazz
+
+/*
+ * Use function 0 or 1 to hash data and
+ * it returns a number within range.
+ * if range is not specified, it is set to 2 
+ */
+Hazz#do( Number hfn, Buffer data, Number range) : Hazz
 
 
 ```
