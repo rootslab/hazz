@@ -1,0 +1,35 @@
+{
+  "name": "hazz"
+  , "version": "0.0.1"
+  , "description": "Hazz."
+  , "homepage": "https://github.com/rootslab/hazz"
+  , "private": false
+  , "repository": {
+    "type": "git"
+    , "url": "git://github.com/rootslab/hazz.git"
+  }
+  , "keywords": [
+    "hazz"
+  ]
+  , "author": {
+    "name": "Guglielmo Ferri"
+    , "email": "44gatti@gmail.com"
+  }
+  , "dependencies": {
+  },
+  "devDependencies": {
+     "dado" : ">=0.2.0"
+  }
+  , "main": "index"
+  , "engines": {
+    "node": ">=0.10.x"
+  }
+  , "scripts": {
+    "test": "node test/run.js"
+  }
+  , "license": "MIT"
+  , "readmeFilename": "Readme.md"
+  , "bugs": {
+    "url": "https://github.com/rootslab/hazz/issues"
+  }
+}
