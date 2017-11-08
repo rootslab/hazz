@@ -16,8 +16,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-
-> __Hazz__.
+> __Hazz__, a pseudo-random data filled table to generate 2 random, indipendent, very fast hash functions.
 
 
 ### Install
@@ -84,7 +83,7 @@ Hazz#fill() : Hazz
  * it returns a number within range.
  * if range is not specified, it is set to 2 
  */
-Hazz#do( Number hfn, Buffer data, Number range) : Hazz
+Hazz#do( Number hfn, Buffer data, Number range) : Number
 
 
 ```
