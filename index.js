@@ -1,1 +1,1 @@
-module.exports = require( './lib/alice' ).Alice;
+module.exports = require( './lib/hazz' ).Hazz;
