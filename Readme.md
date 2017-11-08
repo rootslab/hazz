@@ -46,6 +46,8 @@ var Hazz  = require( 'hazz' );
 
 ### Constructor
 
+> Specify the max number of bytes to parse for every key to hash
+
 ```javascript
 Hazz( Number max_input_length )
 // or
