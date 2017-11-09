@@ -45,8 +45,8 @@ var Hazz  = require( 'hazz' );
 
 ### Constructor
 
-> Specify how many bytes to parse from every
-> input key to hash with pseudo-random data 
+> Specify how many bytes to parse, from every
+> input key, to hash with pseudo-random data 
 
 ```javascript
 Hazz( Number max_input_length )
