@@ -1,12 +1,12 @@
 /*
- * Alice empty test.
+ * Hazz empty test.
  */
 
 exports.test  = function ( done, assertions ) {
     var log = console.log
         , exit = typeof done === 'function' ? done : function () {}
         , assert = assertions || require( 'assert' )
-        , Alice = require( '../' )
+        , Hazz = require( '../' )
         ;
 
     exit();
