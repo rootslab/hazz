@@ -45,7 +45,8 @@ var Hazz  = require( 'hazz' );
 
 ### Constructor
 
-> Specify the max number of bytes to parse for every key to hash
+> Specify how many bytes to parse from every
+> input key to hash with pseudo-random data 
 
 ```javascript
 Hazz( Number max_input_length )
@@ -58,7 +59,7 @@ new Hazz( Number max_input_length )
 
 ```javascript
 /*
- * the pseudo-random data for generating hash numbers 
+ * the table containing pseudo-random data for generating hash numbers 
  */
 Hazz.table
 
@@ -79,11 +80,11 @@ Hazz.ilength
 Hazz#fill() : Hazz
 
 /*
- * Use function 0 or 1 to hash data and
- * it returns a number within range.
- * if range is not specified, it is set to 2 
+ * Use function 0 or 1 to hash data, it returns a
+ * number within range. If range is not specified,
+ * it is set to 2 
  */
-Hazz#do( Number hfn, Buffer data, Number range) : Number
+Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
 
 
 ```
