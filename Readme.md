@@ -16,7 +16,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random data filled table to generate 2 random, indipendent, very fast hash functions.
+> __Hazz__, a pseudo-random-data filled table to generate 2 indipendent, very fast hash functions.
 
 
 ### Install
@@ -74,7 +74,7 @@ Hazz.ilength
 
 ```javascript
 /*
- * fill table with fresh pseudo-random numbers (32 bits)
+ * re-fill table with fresh pseudo-random numbers (32 bits)
  */
 Hazz#fill() : Hazz
 
