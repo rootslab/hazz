@@ -81,9 +81,8 @@ Hazz#fill() : Hazz
 
 /*
  * Use function 0 or 1 to hash data, if specified
- * it returns a number within a range; the minimum
- * range is obviously 2 (0, 1).
- * NOTE: 
+ * it returns a number within a range
+ * NOTE: the minimum range is obviously 2 (0, 1).
  */
 Hazz#do( Number hfn, Buffer || String || Array data [, Number range ] ) : Number
 
