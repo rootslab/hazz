@@ -15,7 +15,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random-data filled table to generate 2 indipendent, very fast hash functions.
+> __Hazz__, a pseudo-random-data-filled-table to generate 2 indipendent, very fast hash functions.
 
 
 ### Install
@@ -83,7 +83,7 @@ Hazz#fill() : Hazz
  * it returns a number within a range
  * NOTE: the minimum range is obviously 2 (0, 1).
  */
-Hazz#do( Number hfn, Buffer || String || Array data [, Number range ] ) : Number
+Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
 
 
 ```
