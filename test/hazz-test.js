@@ -34,7 +34,7 @@ exports.test  = function ( done, assertions ) {
     assert.ok( h.table.length === hlength, 'table size should be: ' + hlength );
     assert.ok( k.table.length === klength, 'table size should be: ' + klength );
    
-    log( '\n- (good) hashng Buffers with table H:' );
+    log( '\n- (good) hashng Buffers with table H' );
     r1 = h.do( 0, b1 );
     r2 = h.do( 0, b2 );
     assert.ok( r1 === r2, 'the result should be the same! now: ' + r1 + ',' + r2 );
@@ -59,7 +59,7 @@ exports.test  = function ( done, assertions ) {
     log( '- we expect incorrect results: \n  - %s -> %s\n  - %s -> %s', s2, r1, s3, r2 );
     assert.ok( r1 === r2, 'the result should be the same! now: ' + r1 + ',' + r2 );  
 
-    log( '- check function 1 results after refill, reuslts should be different' );
+    log( '\n- check function 1 results after refill, reuslts should be different' );
     r1 = h.do( 1, b1 );
     h.refill();
     r2 = h.do( 1, b1 );
