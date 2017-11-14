@@ -9,6 +9,7 @@ exports.test  = function ( done, assertions ) {
         , Hazz = require( '../' )
         , max_len = 5
         , hfn = 3
+        , range = 1 << 16
         , h = Hazz( max_len, hfn )
         , k = Hazz( max_len + 1, hfn + 1 )
         , s1 = 'HAZZ?!'
@@ -50,23 +51,23 @@ exports.test  = function ( done, assertions ) {
     assert.ok( h2 === hr[ 2 ], 'the result should be the same! now: ' + h2 + ',' + hr[ 2 ] );
 
 
-    log( '\n-> hashing Buffers with table K functions, one at a time' );
+    log( '\n-> hashing Buffers with table K functions, one at a time, within a range' );
     
-    k0 = k.do( 0, b1 );
-    k1 = k.do( 1, b1 );
-    k2 = k.do( 2, b1 );
+    k0 = k.do( 0, b1, range );
+    k1 = k.do( 1, b1, range );
+    k2 = k.do( 2, b1, range );
 
     log( '\n - table K read : %s, length: %d bytes', b1.slice( 0, max_len + 1 ), max_len + 1 )
 
-    log( ' - k0: %d', h0 );
-    log( ' - k1: %d', h1 );
-    log( ' - k2: %d', h2 );
+    log( ' - k0: %d', h0, range );
+    log( ' - k1: %d', h1, range );
+    log( ' - k2: %d', h2, range );
 
     log( '\n- hashing Buffers with table K functions, all together' );
     hr = h.all( b1 );
-    log( ' - kr[0]: %s', hr[ 0 ] );
-    log( ' - kr[1]: %s', hr[ 1 ] );
-    log( ' - kr[2]: %s', hr[ 2 ] );
+    log( ' - kr[0]: %s', hr[ 0 ], range );
+    log( ' - kr[1]: %s', hr[ 1 ], range );
+    log( ' - kr[2]: %s', hr[ 2 ], range );
 
     log( '\n- check if results are the same' );
 
