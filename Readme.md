@@ -87,6 +87,12 @@ Hazz#fill() : Hazz
  */
 Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
 
+/*
+ * hash with all functions in parallel,
+ * it returns an array of results
+ */
+Hazz#all( Buffer data [, Number range ] ) : Array
+
 
 ```
 
