@@ -51,7 +51,7 @@ exports.test  = function ( done, assertions ) {
     assert.ok( h2 === hr[ 2 ], 'the result should be the same! now: ' + h2 + ',' + hr[ 2 ] );
 
 
-    log( '\n-> hashing Buffers with table K functions, one at a time, within a range' );
+    log( '\n-> hashing Buffers with table K functions, one at a time, within range: %d' );
     
     k0 = k.do( 0, b1, range );
     k1 = k.do( 1, b1, range );
@@ -59,21 +59,21 @@ exports.test  = function ( done, assertions ) {
 
     log( '\n - table K read : %s, length: %d bytes', b1.slice( 0, max_len + 1 ), max_len + 1 )
 
-    log( ' - k0: %d', h0, range );
-    log( ' - k1: %d', h1, range );
-    log( ' - k2: %d', h2, range );
+    log( ' - k0: %d', h0 );
+    log( ' - k1: %d', h1 );
+    log( ' - k2: %d', h2 );
 
     log( '\n- hashing Buffers with table K functions, all together' );
-    hr = h.all( b1 );
-    log( ' - kr[0]: %s', hr[ 0 ], range );
-    log( ' - kr[1]: %s', hr[ 1 ], range );
-    log( ' - kr[2]: %s', hr[ 2 ], range );
+    hr = k.all( b1, range );
+    log( ' - kr[0]: %s', hr[ 0 ] );
+    log( ' - kr[1]: %s', hr[ 1 ] );
+    log( ' - kr[2]: %s', hr[ 2 ] );
 
     log( '\n- check if results are the same' );
 
-    assert.ok( h0 === hr[ 0 ], 'the result should be the same! now: ' + h0 + ',' + hr[ 0 ] );
-    assert.ok( h1 === hr[ 1 ], 'the result should be the same! now: ' + h1 + ',' + hr[ 1 ] );
-    assert.ok( h2 === hr[ 2 ], 'the result should be the same! now: ' + h2 + ',' + hr[ 2 ] );
+    assert.ok( k0 === hr[ 0 ], 'the result should be the same! now: ' + h0 + ',' + hr[ 0 ] );
+    assert.ok( k1 === hr[ 1 ], 'the result should be the same! now: ' + h1 + ',' + hr[ 1 ] );
+    assert.ok( k2 === hr[ 2 ], 'the result should be the same! now: ' + h2 + ',' + hr[ 2 ] );
     exit();
 };
 
