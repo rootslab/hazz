@@ -15,7 +15,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random-data-filled-table to generate 2 indipendent, very fast hash functions.
+> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__, __very fast__ hash functions.
 
 
 ### Install
@@ -50,9 +50,9 @@ var Hazz  = require( 'hazz' );
 > more pseudo-randomness will be produced for every key.
 
 ```javascript
-Hazz( Number max_input_length )
+Hazz( [ Number max_input_length [, Number hfn ] ] )
 // or
-new Hazz( Number max_input_length )
+new Hazz( [ Number max_input_length [, Number hfn ] ] )
 ```
 
 ###  Properties

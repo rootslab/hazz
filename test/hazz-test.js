@@ -8,10 +8,11 @@ exports.test  = function ( done, assertions ) {
         , assert = assertions || require( 'assert' )
         , Hazz = require( '../' )
         , max_len = 5
-        , h = Hazz( max_len )
-        , k = Hazz( max_len + 1 )
+        , hfn  = 2
+        , h = Hazz( max_len, hfn )
+        , k = Hazz( max_len + 1, hfn + 1 )
         , hlength = max_len << 11
-        , klength = ( max_len + 1 ) << 11
+        , klength = 3 * ( ( max_len + 1 ) << 10 )
         , s1 = 'HAZZ?!'
         , s2 = 'HAZZ??'
         , s3 = 'PAZZ??'
@@ -33,7 +34,12 @@ exports.test  = function ( done, assertions ) {
     log( '  > table k: %d bytes, max input length: %d', klength, klength >>> 11 );
     assert.ok( h.table.length === hlength, 'table size should be: ' + hlength );
     assert.ok( k.table.length === klength, 'table size should be: ' + klength );
-   
+
+    log( '\n- check number of functions for table h (2)' );
+    assert.ok( h.hfn === hfn - 1, 'functions should be: ' + hfn );
+    log( '\n- check number of functions for table k (3)' );
+    assert.ok( k.hfn === hfn, 'functions should be: ' + hfn + 1 );
+
     log( '\n- (good) hashng Buffers with table H' );
     r1 = h.do( 0, b1 );
     r2 = h.do( 0, b2 );
