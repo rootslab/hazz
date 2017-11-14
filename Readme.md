@@ -81,7 +81,7 @@ Hazz.ilength
 Hazz#fill() : Hazz
 
 /*
- * Use one of the k function to hash data.
+ * Specify a positive integer (from0 to k-1) to use the k-th hash function
  * If specified it returns a number within a range
  * NOTE: the minimum range is obviously 2 (0, 1).
  */
