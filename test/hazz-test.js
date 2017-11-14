@@ -36,9 +36,9 @@ exports.test  = function ( done, assertions ) {
     assert.ok( k.table.length === klength, 'table size should be: ' + klength );
 
     log( '\n- check number of functions for table h (2)' );
-    assert.ok( h.hfn === hfn - 1, 'functions should be: ' + hfn );
+    assert.ok( h.hfn === hfn, 'functions should be: ' + hfn );
     log( '- check number of functions for table k (3)' );
-    assert.ok( k.hfn === hfn, 'functions should be: ' + hfn + 1 );
+    assert.ok( k.hfn === hfn + 1, 'functions should be: ' + hfn + 1 );
 
     log( '\n- (good) hashng Buffers with table H' );
     r1 = h.do( 0, b1 );
