@@ -81,8 +81,8 @@ Hazz.ilength
 Hazz#fill() : Hazz
 
 /*
- * Use function 0 or 1 to hash data, if specified
- * it returns a number within a range
+ * Use one of the k function to hash data.
+ * If specified it returns a number within a range
  * NOTE: the minimum range is obviously 2 (0, 1).
  */
 Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
