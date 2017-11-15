@@ -76,9 +76,9 @@ Hazz.ilength
 
 ```javascript
 /*
- * re-fill table with fresh pseudo-random numbers (32 bits)
+ * re-fill table with fresh pseudo-random numbers
  */
-Hazz#fill() : Hazz
+Hazz#refill() : Hazz
 
 /*
  * Specify a positive integer (from0 to k-1) to use the k-th hash function
