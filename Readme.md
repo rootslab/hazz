@@ -69,7 +69,6 @@ Hazz.table
  */
 Hazz.ilength
 
-
 /*
  * total number of hash functions  
  */
