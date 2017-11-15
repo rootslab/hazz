@@ -15,7 +15,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__, __very fast__ hash functions.
+> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__, __very fast__ (non-cryptographic) hash functions.
 
 
 ### Install
@@ -68,6 +68,12 @@ Hazz.table
  * max input key length  
  */
 Hazz.ilength
+
+
+/*
+ * total number of hash functions  
+ */
+Hazz.hfn
 ```
 
 ### Methods
@@ -82,7 +88,8 @@ Hazz#refill() : Hazz
 
 /*
  * Specify a positive integer (from0 to k-1) to use the k-th hash function
- * If specified it returns a number within a range
+ * If specified it returns a number within a range.
+ * NOTE: the input should be a Buffer (no Strings or Arrays).
  * NOTE: the minimum range is obviously 2 (0, 1).
  */
 Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
