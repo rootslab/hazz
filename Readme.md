@@ -86,7 +86,7 @@ Hazz.hfn
 Hazz#refill() : Hazz
 
 /*
- * Specify a positive integer (from0 to k-1) to use the k-th hash function
+ * Specify a positive integer (from 0 to k-1) to use the k-th hash function
  * If specified it returns a number within a range.
  * NOTE: the input should be a Buffer (no Strings or Arrays).
  * NOTE: the minimum range is obviously 2 (0, 1).
