@@ -31,11 +31,11 @@ var Hazz  = require( 'hazz' );
 ```
 ### Run Tests
 
-> __to run all test files, install devDependecies:__
+> __to run all test files, install devDependencies:__
 
 ```bash
  $ cd hazz/
- # install or update devDependecies
+ # install or update devDependencies
  $ npm install 
  # run tests
  $ npm test
