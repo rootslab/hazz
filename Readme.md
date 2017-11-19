@@ -63,7 +63,10 @@ new Hazz( [ Number max_input_length [, Number hfn ] ] )
 
 ```javascript
 /*
- * the table containing pseudo-random data for generating hash numbers 
+ * the table containing pseudo-random data for generating hash numbers.
+ *
+ * NOTE: the size of the table is (max_input_length * hfn) kilobytes,
+ * it doesn't depends on the expected popoulation.
  */
 Hazz.table
 
@@ -97,7 +100,7 @@ Hazz#refill() : Hazz
  *  - the input should be a Buffer (no Strings or Arrays).
  *  - the minimum range is obviously 2 (0, 1).
  *  - the integers produced are at min 4 byte long (>= 2^24),
- *    longer the input, bigger the numbers produced.
+ *    longer the input parsed, bigger the numbers produced.
  */
 Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
 
