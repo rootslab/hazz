@@ -64,9 +64,8 @@ new Hazz( [ Number max_input_length [, Number hfn ] ] )
 ```javascript
 /*
  * the table containing pseudo-random data for generating hash numbers.
- *
- * NOTE: the size of the table is (max_input_length * hfn) kilobytes,
- * it doesn't depends on the expected popoulation.
+ * NOTE: the size of the table is: (max_input_length * hfn) kilobytes,
+ * it doesn't depends on the expected population.
  */
 Hazz.table
 
