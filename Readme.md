@@ -41,13 +41,16 @@ var Hazz  = require( 'hazz' );
  $ npm test
 ```
 
-
 ### Constructor
 
 > Specify how many bytes to parse (at max), from every
-> input key to hash.
-> NOTE: default value is 16 byte. More bytes it parses,
-> more pseudo-randomness will be produced for every key.
+> input key to hash, then the number of functions to use.
+
+> NOTE: 
+>  - default value for input length is 16 byte.
+>  - default and minimum value for hfn is 2
+
+> Arguments between [] are optional.
 
 ```javascript
 Hazz( [ Number max_input_length [, Number hfn ] ] )
@@ -89,8 +92,12 @@ Hazz#refill() : Hazz
  * Specify a positive integer (from 0 to k-1) to use the k-th
  * hash function. If specified it returns a number within a
  * range.
- * NOTE: the input should be a Buffer (no Strings or Arrays).
- * NOTE: the minimum range is obviously 2 (0, 1).
+ * 
+ * NOTE: 
+ *  - the input should be a Buffer (no Strings or Arrays).
+ *  - the minimum range is obviously 2 (0, 1).
+ *  - the integers produced are at min 4 byte long (>= 2^24),
+ *    longer the input, bigger the numbers produced.
  */
 Hazz#do( Number hfn, Buffer data [, Number range ] ) : Number
 
