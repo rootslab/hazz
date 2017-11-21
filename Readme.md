@@ -15,7 +15,7 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__, __very fast__ (non-cryptographic) hash functions.
+> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__ and __uniform__, __very fast__ (non-cryptographic) hash functions.
 
 
 ### Install
