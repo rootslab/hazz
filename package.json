@@ -1,6 +1,6 @@
 {
   "name": "hazz"
-  , "version": "0.5.3"
+  , "version": "1.0.0"
   , "description": "Hazz, a pseudo-random-data-filled-table to generate k indipendent and uniform, very fast (non-cryptographic) hash functions."
   , "homepage": "https://github.com/rootslab/hazz"
   , "private": false
@@ -11,8 +11,10 @@
   , "keywords": [
     "hazz"
     , "random"
+    , "pseudo-random"
     , "hash"
     , "hashing"
+    , "uniform hashing"
   ]
   , "author": {
     "name": "Guglielmo Ferri"

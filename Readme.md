@@ -15,8 +15,9 @@
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
-> __Hazz__, a pseudo-random-data-filled-table to generate __k indipendent__ and __uniform__, __very fast__ (non-cryptographic) hash functions.
+> __Hazz__, a __pseudo-random-data-filled-table__ to generate __k indipendent__ and __uniform__, __very fast__ (non-cryptographic) hash functions.
 
+> If you need to hash __arbitrary long length__ inputs, without using a fixed (big) size pseudo-random table, a fast way is to __simulate__ a set of indipendent hash functions using a single crpyto-digest (with a sha-512 digest we can simulate up to 16 functions). Take a look to __[Mazz](https://github.com/rootslab/mazz)__ (the fast way of the __tonto__).
 
 ### Install
 
@@ -39,6 +40,12 @@ var Hazz  = require( 'hazz' );
  $ npm install 
  # run tests
  $ npm test
+```
+
+> __to execute a single test file simply do__:
+
+```bash
+ $ node test/file-name.js
 ```
 
 ### Constructor
