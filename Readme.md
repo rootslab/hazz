@@ -2,7 +2,7 @@
 
 [![NPM VERSION](http://img.shields.io/npm/v/hazz.svg?style=flat)](https://www.npmjs.org/package/hazz)
 [![CODACY BADGE](https://img.shields.io/codacy/b18ed7d95b0a4707a0ff7b88b30d3def.svg?style=flat)](https://www.codacy.com/public/44gatti/hazz)
-[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/coverage/github/rootslab/hazz.svg?style=flat)](https://codeclimate.com/github/rootslab/hazz)
+[![CODECLIMATE-TEST-COVERAGE](https://img.shields.io/codeclimate/c/rootslab/hazz.svg?style=flat)](https://codeclimate.com/github/rootslab/hazz)
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/hazz#mit-license)
 
 ![NODE VERSION](https://img.shields.io/node/v/hazz.svg)
@@ -12,6 +12,7 @@
 
 [![NPM MONTHLY](http://img.shields.io/npm/dm/hazz.svg?style=flat)](http://npm-stat.com/charts.html?package=hazz)
 ![NPM YEARLY](https://img.shields.io/npm/dy/hazz.svg)
+[![NPM TOTAL](https://img.shields.io/npm/dt/hazz.svg)](http://npm-stat.com/charts.html?package=hazz)
 
 [![NPM GRAPH](https://nodei.co/npm/hazz.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hazz/)
 
