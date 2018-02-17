@@ -1,6 +1,6 @@
 {
   "name": "hazz"
-  , "version": "1.0.5"
+  , "version": "1.1.0"
   , "description": "Hazz, a pseudo-random-data-filled-table to generate k indipendent and uniform, very fast (non-cryptographic) hash functions."
   , "homepage": "https://github.com/rootslab/hazz"
   , "private": false
